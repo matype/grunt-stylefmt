@@ -1,6 +1,6 @@
 {
   "name": "grunt-cssfmt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Grunt plugin for CSSfmt",
   "homepage": "https://github.com/morishitter/grunt-cssfmt",
   "repository": "git://github.com/morishitter/grunt-cssfmt/git",
