@@ -4,6 +4,9 @@
   "description": "Grunt plugin for CSSfmt",
   "homepage": "https://github.com/morishitter/grunt-cssfmt",
   "repository": "git://github.com/morishitter/grunt-cssfmt/git",
+  "scripts": {
+    "test": "grunt test"
+  },
   "author": {
     "name": "Masaaki Morishita",
     "email": "morishitter@gmail.com",
