@@ -29,5 +29,8 @@
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "dependencies": {
+    "cssfmt": "^0.3.0"
   }
 }
