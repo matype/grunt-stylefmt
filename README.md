@@ -1,6 +1,7 @@
-# grunt-cssfmt
+# grunt-cssfmt [![Build Status](https://travis-ci.org/morishitter/grunt-cssfmt.svg)](https://travis-ci.org/morishitter/grunt-cssfmt)
 
-> Grunt plugin for CSSfmt
+
+> Grunt plugin for [CSSfmt](https://github.com/morishitter/cssfmt)
 
 ## Getting Started
 This plugin requires Grunt.
