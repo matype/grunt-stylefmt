@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         }
       }).map(function (filepath) {
         var cssFile = grunt.file.read(filepath);
-        return cssfmt(cssFile).toString();
+        return cssfmt.process(cssFile);
       }).join(grunt.util.normalizelf(options.separator));
 
       grunt.file.write(file.dest, src);
