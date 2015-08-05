@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     },
 
     cssfmt: {
-      forma: {
+      format: {
         files: {
          'tmp/output.css': ['test/fixtures/input.css']
         }
