@@ -7,7 +7,7 @@ module.exports = function (grunt) {
       tests: ['tmp']
     },
 
-    cssfmt: {
+    stylefmt: {
       format: {
         files: {
          'tmp/output.css': ['test/fixtures/input.css']
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadTasks('tasks');
-  grunt.registerTask('test', ['clean', 'cssfmt']);
+  grunt.registerTask('test', ['clean', 'stylefmt']);
   grunt.registerTask('default', ['test']);
 
 };

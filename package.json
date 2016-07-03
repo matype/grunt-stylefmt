@@ -1,7 +1,7 @@
 {
-  "name": "grunt-cssfmt",
-  "version": "1.0.0",
-  "description": "Grunt plugin for CSSfmt",
+  "name": "grunt-stylefmt",
+  "version": "2.0.0",
+  "description": "Grunt plugin for stylefmt",
   "homepage": "https://github.com/morishitter/grunt-cssfmt",
   "repository": "git://github.com/morishitter/grunt-cssfmt/git",
   "scripts": {
@@ -23,17 +23,14 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-nodeunit": "~0.3.0",
-    "grunt": "~0.4.2",
-    "jshint-stylish": "~0.1.5",
-    "load-grunt-tasks": "~0.3.0"
-  },
-  "scripts": {
-    "test": "grunt test"
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "jshint-stylish": "^2.2.0",
+    "load-grunt-tasks": "^3.5.0"
   },
   "dependencies": {
-    "cssfmt": "^1.0.0"
+    "stylefmt": "^4.1.0"
   }
 }

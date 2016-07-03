@@ -1,7 +1,7 @@
-# grunt-cssfmt [![Build Status](https://travis-ci.org/morishitter/grunt-cssfmt.svg)](https://travis-ci.org/morishitter/grunt-cssfmt)
+# grunt-stylefmt [![Build Status](https://travis-ci.org/morishitter/grunt-stylefmt.svg)](https://travis-ci.org/morishitter/grunt-stylefmt)
 
 
-> Grunt plugin for [CSSfmt](https://github.com/morishitter/cssfmt)
+> Grunt plugin for [stylefmt](https://github.com/morishitter/stylefmt)
 
 ## Getting Started
 This plugin requires Grunt.
@@ -9,23 +9,23 @@ This plugin requires Grunt.
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-cssfmt --save-dev
+npm install grunt-stylefmt --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-cssfmt');
+grunt.loadNpmTasks('grunt-stylefmt');
 ```
 
-## The "cssfmt" task
+## The "stylefmt" task
 
 ### Overview
-In your project's Gruntfile, add a section named `cssfmt` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `stylefmt` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  cssfmt: {
+  stylefmt: {
     format: {
       files: {
        'dest/output.css': ['src/input.css']

@@ -1,12 +1,14 @@
 module.exports = function (grunt) {
 
-  var cssfmt = require('cssfmt');
+  var stylefmt = require('stylefmt');
 
-  grunt.registerMultiTask('cssfmt', 'Grunt plugin for CSSfmt', function () {
+  grunt.registerMultiTask('stylefmt', 'Grunt plugin for stylefmt', function () {
 
     var options = this.options ({
       separator: '\n'
     });
+    
+    var done = this.async();
 
     this.files.forEach(function (file) {
       var src = file.src.filter(function (filepath) {
@@ -18,12 +20,12 @@ module.exports = function (grunt) {
         }
       }).map(function (filepath) {
         var cssFile = grunt.file.read(filepath);
-        return cssfmt.process(cssFile);
-      }).join(grunt.util.normalizelf(options.separator));
-
-      grunt.file.write(file.dest, src);
-
-      grunt.log.writeln('File "' + file.dest + '" created.');
+        stylefmt.process(cssFile).then(function (result) {
+          grunt.file.write(file.dest, result.css);
+          grunt.log.writeln('File "' + file.dest + '" created.');
+        });
+      });
+      
     });
   });
 
