@@ -2,8 +2,8 @@
   "name": "grunt-stylefmt",
   "version": "2.0.0",
   "description": "Grunt plugin for stylefmt",
-  "homepage": "https://github.com/morishitter/grunt-cssfmt",
-  "repository": "git://github.com/morishitter/grunt-cssfmt/git",
+  "homepage": "https://github.com/morishitter/grunt-stylefmt",
+  "repository": "git://github.com/morishitter/grunt-stylefmt/git",
   "scripts": {
     "test": "grunt test"
   },
